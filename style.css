@@ -343,3 +343,101 @@ margin: 15px 0;
 }
 
 }
+/* ================================
+NEW: PAGE INTRO + TRIPS PAGE
+================================ */
+
+.trip img {
+  max-width: 100%;
+  height: auto;
+}
+
+.trip figcaption {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.trip h3 {
+  color: #16324f;
+}
+
+.trip dt {
+  font-weight: bold;
+}
+
+.trip dd {
+  margin-left: 0;
+  margin-bottom: 10px;
+}
+
+.trip table {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+/* This is the CSS-only "interactive" part:
+   when you click "View trip" or a Manali/Goa/Jaipur button,
+   the page jumps to that trip and :target highlights it. */
+.trip:target {
+  background-color: #e8f1f8;
+  border: 3px solid #16324f;
+}
+
+/* ================================
+NEW: FORMS (Register, Host, Login)
+================================ */
+
+.page-form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.page-form input,
+.page-form select,
+.page-form textarea {
+  display: block;
+  width: 100%;
+  max-width: 500px;
+}
+
+.page-form textarea {
+  font-family: inherit;
+  font-size: 16px;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #aaa;
+}
+
+/* radio buttons and checkboxes stay small and inline */
+.page-form input[type="radio"],
+.page-form input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+
+.page-form label.inline {
+  display: inline;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.hint {
+  font-size: 14px;
+  color: #555;
+  margin: 3px 0 0;
+}
+
+/* red border for wrong input, green border for correct input
+   (shows after the user has typed something) */
+.page-form input:user-invalid,
+.page-form select:user-invalid,
+.page-form textarea:user-invalid {
+  border: 2px solid #c62828;
+}
+
+.page-form input:user-valid,
+.page-form select:user-valid,
+.page-form textarea:user-valid {
+  border: 2px solid #2e7d32;
+}
