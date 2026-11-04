@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Register on TripMate with your student ID.">
+  <title>Register | TripMate</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HEADER + NAVIGATION -->
+  <header>
+    <hgroup>
+      <h1>TripMate - By Ishan</h1>
+      <p>Travel with students you can trust.</p>
+    </hgroup>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="host.html">Host a Trip</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="register-section">
+      <h2>Create your student account</h2>
+      <p>
+        Every traveller registers with a college
+        <abbr title="Identification">ID</abbr>, so everyone on a trip is a
+        real student. All fields are required.
+      </p>
+
+      <form class="page-form" action="login.html" method="post">
+
+        <fieldset>
+          <legend>Student details</legend>
+
+          <label for="fullname">Full name</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="e.g. Ishan Bhatt"
+            minlength="3"
+            required
+          >
+
+          <label for="college">College / University</label>
+          <input
+            type="text"
+            id="college"
+            name="college"
+            placeholder="e.g. South Asian University"
+            required
+          >
+
+          <label for="studentid">Student ID</label>
+          <input
+            type="text"
+            id="studentid"
+            name="studentid"
+            placeholder="e.g. SAU/FET/BTECHCSE/2026/087"
+            pattern="[A-Za-z0-9\/\-]{5,30}"
+            title="5 to 30 characters: letters, numbers, / or -"
+            required
+          >
+          <p class="hint">Letters, numbers, / and - only (5 to 30 characters).</p>
+
+          <label for="email">College email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@college.edu"
+            required
+          >
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            required
+          >
+          <p class="hint">At least 8 characters.</p>
+
+          <p>
+            <input type="checkbox" id="agree" name="agree" required>
+            <label class="inline" for="agree">
+              I confirm that I am a current student and the ID above is mine.
+            </label>
+          </p>
+
+          <p>
+            <button type="submit">Register</button>
+            <button type="reset">Reset</button>
+          </p>
+        </fieldset>
+
+      </form>
+
+      <p>Already registered? <a href="login.html">Login here</a>.</p>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <hr>
+
+    <div>
+      <h3>Quick links</h3>
+      <a href="about.html">About us</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="login.html">Login</a>
+    </div>
+
+    <address>
+      <strong>TripMate</strong><br>
+      South Asian University, New Delhi, India<br>
+      Email:
+      <a href="mailto:hello@tripmate.example">hello@tripmate.example</a>
+    </address>
+
+    <p>
+      <small>
+        &copy; 2026 TripMate.
+        A student project for Fundamentals of Web Design.
+      </small>
+    </p>
+  </footer>
+
+</body>
+</html>
