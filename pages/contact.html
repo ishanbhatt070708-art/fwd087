@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact the TripMate team.">
+  <title>Contact | TripMate</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <!-- HEADER + NAVIGATION -->
+  <header>
+    <hgroup>
+      <h1>TripMate - By Ishan</h1>
+      <p>Travel with students you can trust.</p>
+    </hgroup>
+
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="host.html">Host a Trip</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- CONTACT FORM -->
+    <section id="contact-section">
+      <h2>Contact us</h2>
+      <p>
+        Questions about joining a trip, hosting, or your account? Send us a
+        message. All fields are required.
+      </p>
+
+      <form id="contactForm" class="page-form" action="contact.html" method="get">
+
+        <fieldset>
+          <legend>Your message</legend>
+
+          <label for="fullname">Full name</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="e.g. Ishan Bhatt"
+            minlength="3"
+            required
+          >
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@college.edu"
+            required
+          >
+
+          <label for="topic">What is this about?</label>
+          <select id="topic" name="topic" required>
+            <option value="">-- Choose a topic --</option>
+            <option value="Joining a trip">Joining a trip</option>
+            <option value="Hosting a trip">Hosting a trip</option>
+            <option value="My account">My account</option>
+            <option value="Report a problem">Report a problem or a user</option>
+            <option value="Feedback">Feedback or ideas</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            minlength="10"
+            maxlength="500"
+            placeholder="How can we help? (10 to 500 characters)"
+            required
+          ></textarea>
+          <p class="hint" id="msgCount">0 / 500</p>
+
+          <p>
+            <button type="submit">Send message</button>
+            <button type="reset">Reset</button>
+          </p>
+        </fieldset>
+
+      </form>
+    </section>
+
+
+    <!-- CONTACT DETAILS -->
+    <section id="contact-info">
+      <h2>Contact details</h2>
+
+      <dl>
+        <dt>Email</dt>
+        <dd><a href="mailto:hello@tripmate.example">hello@tripmate.example</a></dd>
+
+        <dt>Project by</dt>
+        <dd>Ishan Bhatt, B.Tech CSE, Section D</dd>
+
+        <dt>University</dt>
+        <dd>South Asian University, New Delhi, India</dd>
+
+        <dt>Reply time</dt>
+        <dd>Within 2 working days</dd>
+      </dl>
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq">
+      <h2>Quick answers</h2>
+
+      <details>
+        <summary>Who can join a trip?</summary>
+        <p>Only registered students. You register with your name, college and student ID.</p>
+      </details>
+
+      <details>
+        <summary>How do I join a trip?</summary>
+        <p>Login, open the <a href="trips.html">Trips page</a>, check the cost and seats, then request to join.</p>
+      </details>
+
+      <details>
+        <summary>How do I host a trip?</summary>
+        <p>Login and open <a href="host.html">Host a Trip</a>. Pick a destination, set the cost and seats, then publish.</p>
+      </details>
+
+      <details>
+        <summary>Are the costs exact?</summary>
+        <p>No. Each trip shows an estimated cost per person so you can compare before you join.</p>
+      </details>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <hr>
+
+    <div>
+      <h3>Quick links</h3>
+      <a href="about.html">About us</a> |
+      <a href="contact.html">Contact</a> |
+      <a href="login.html">Login</a>
+    </div>
+
+    <address>
+      <strong>TripMate</strong><br>
+      South Asian University, New Delhi, India<br>
+      Email:
+      <a href="mailto:hello@tripmate.example">hello@tripmate.example</a>
+    </address>
+
+    <p>
+      <small>
+        &copy; 2026 TripMate.
+        A student project for Fundamentals of Web Design.
+      </small>
+    </p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
